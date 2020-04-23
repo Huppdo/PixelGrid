@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Dom's Daily Pixel Grid</title>
+    <style>
+        .smolBox {
+            float: left;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(0, 0, 0, .8);
+            display: inline;
+            margin: 0 auto;
+            text-align: center;
+        }
+	.displayBox {
+            float: center;
+            width: 180px;
+            height: 40px;
+            border: 1px solid rgba(0, 0, 0, .8);
+            display: inline;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .tallBox {
+            display: inline;
+            text-align: center;
+            float: left;
+            margin: 0 auto;
+            width: 20px;
+            height: 60px;
+            border: 1px solid rgba(0, 0, 0, .8);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .blockC {
+            display: inline-block;
+            margin: 0 auto;
+            width: 320px;
+            text-align: center;
+            border: 0px solid rgba(0, 0, 0, .8);
+        }
+    </style>
+</head>
+<body>
+<center>
+<div class="blockC">
+    <div class="tallBox" style="border-color: white"></div>
+    <div class="tallBox"><p>J</p></div>
+    <div class="tallBox"><p>F</p></div>
+    <div class="tallBox"><p>M</p></div>
+    <div class="tallBox"><p>A</p></div>
+    <div class="tallBox"><p>M</p></div>
+    <div class="tallBox"><p>J</p></div>
+    <div class="tallBox"><p>J</p></div>
+    <div class="tallBox"><p>A</p></div>
+    <div class="tallBox"><p>S</p></div>
+    <div class="tallBox"><p>O</p></div>
+    <div class="tallBox"><p>N</p></div>
+    <div class="tallBox"><p>D</p></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">1</div>
+    <div class="smolBox" id="1"></div>
+    <div class="smolBox" id="32"></div>
+    <div class="smolBox" id="63"></div>
+    <div class="smolBox" id="94"></div>
+    <div class="smolBox" id="125"></div>
+    <div class="smolBox" id="156"></div>
+    <div class="smolBox" id="187"></div>
+    <div class="smolBox" id="218"></div>
+    <div class="smolBox" id="249"></div>
+    <div class="smolBox" id="280"></div>
+    <div class="smolBox" id="311"></div>
+    <div class="smolBox" id="342"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">2</div>
+    <div class="smolBox" id="2"></div>
+    <div class="smolBox" id="33"></div>
+    <div class="smolBox" id="64"></div>
+    <div class="smolBox" id="95"></div>
+    <div class="smolBox" id="126"></div>
+    <div class="smolBox" id="157"></div>
+    <div class="smolBox" id="188"></div>
+    <div class="smolBox" id="219"></div>
+    <div class="smolBox" id="250"></div>
+    <div class="smolBox" id="281"></div>
+    <div class="smolBox" id="312"></div>
+    <div class="smolBox" id="343"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">3</div>
+    <div class="smolBox" id="3"></div>
+    <div class="smolBox" id="34"></div>
+    <div class="smolBox" id="65"></div>
+    <div class="smolBox" id="96"></div>
+    <div class="smolBox" id="127"></div>
+    <div class="smolBox" id="158"></div>
+    <div class="smolBox" id="189"></div>
+    <div class="smolBox" id="220"></div>
+    <div class="smolBox" id="251"></div>
+    <div class="smolBox" id="282"></div>
+    <div class="smolBox" id="313"></div>
+    <div class="smolBox" id="344"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">4</div>
+    <div class="smolBox" id="4"></div>
+    <div class="smolBox" id="35"></div>
+    <div class="smolBox" id="66"></div>
+    <div class="smolBox" id="97"></div>
+    <div class="smolBox" id="128"></div>
+    <div class="smolBox" id="159"></div>
+    <div class="smolBox" id="190"></div>
+    <div class="smolBox" id="221"></div>
+    <div class="smolBox" id="252"></div>
+    <div class="smolBox" id="283"></div>
+    <div class="smolBox" id="314"></div>
+    <div class="smolBox" id="345"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">5</div>
+    <div class="smolBox" id="5"></div>
+    <div class="smolBox" id="36"></div>
+    <div class="smolBox" id="67"></div>
+    <div class="smolBox" id="98"></div>
+    <div class="smolBox" id="129"></div>
+    <div class="smolBox" id="160"></div>
+    <div class="smolBox" id="191"></div>
+    <div class="smolBox" id="222"></div>
+    <div class="smolBox" id="253"></div>
+    <div class="smolBox" id="284"></div>
+    <div class="smolBox" id="315"></div>
+    <div class="smolBox" id="346"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">6</div>
+    <div class="smolBox" id="6"></div>
+    <div class="smolBox" id="37"></div>
+    <div class="smolBox" id="68"></div>
+    <div class="smolBox" id="99"></div>
+    <div class="smolBox" id="130"></div>
+    <div class="smolBox" id="161"></div>
+    <div class="smolBox" id="192"></div>
+    <div class="smolBox" id="223"></div>
+    <div class="smolBox" id="254"></div>
+    <div class="smolBox" id="285"></div>
+    <div class="smolBox" id="316"></div>
+    <div class="smolBox" id="347"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">7</div>
+    <div class="smolBox" id="7"></div>
+    <div class="smolBox" id="38"></div>
+    <div class="smolBox" id="69"></div>
+    <div class="smolBox" id="100"></div>
+    <div class="smolBox" id="131"></div>
+    <div class="smolBox" id="162"></div>
+    <div class="smolBox" id="193"></div>
+    <div class="smolBox" id="224"></div>
+    <div class="smolBox" id="255"></div>
+    <div class="smolBox" id="286"></div>
+    <div class="smolBox" id="317"></div>
+    <div class="smolBox" id="348"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">8</div>
+    <div class="smolBox" id="8"></div>
+    <div class="smolBox" id="39"></div>
+    <div class="smolBox" id="70"></div>
+    <div class="smolBox" id="101"></div>
+    <div class="smolBox" id="132"></div>
+    <div class="smolBox" id="163"></div>
+    <div class="smolBox" id="194"></div>
+    <div class="smolBox" id="225"></div>
+    <div class="smolBox" id="256"></div>
+    <div class="smolBox" id="287"></div>
+    <div class="smolBox" id="318"></div>
+    <div class="smolBox" id="349"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">9</div>
+    <div class="smolBox" id="9"></div>
+    <div class="smolBox" id="40"></div>
+    <div class="smolBox" id="71"></div>
+    <div class="smolBox" id="102"></div>
+    <div class="smolBox" id="133"></div>
+    <div class="smolBox" id="164"></div>
+    <div class="smolBox" id="195"></div>
+    <div class="smolBox" id="226"></div>
+    <div class="smolBox" id="257"></div>
+    <div class="smolBox" id="288"></div>
+    <div class="smolBox" id="319"></div>
+    <div class="smolBox" id="350"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">10</div>
+    <div class="smolBox" id="10"></div>
+    <div class="smolBox" id="41"></div>
+    <div class="smolBox" id="72"></div>
+    <div class="smolBox" id="103"></div>
+    <div class="smolBox" id="134"></div>
+    <div class="smolBox" id="165"></div>
+    <div class="smolBox" id="196"></div>
+    <div class="smolBox" id="227"></div>
+    <div class="smolBox" id="258"></div>
+    <div class="smolBox" id="289"></div>
+    <div class="smolBox" id="320"></div>
+    <div class="smolBox" id="351"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">11</div>
+    <div class="smolBox" id="11"></div>
+    <div class="smolBox" id="42"></div>
+    <div class="smolBox" id="73"></div>
+    <div class="smolBox" id="104"></div>
+    <div class="smolBox" id="135"></div>
+    <div class="smolBox" id="166"></div>
+    <div class="smolBox" id="197"></div>
+    <div class="smolBox" id="228"></div>
+    <div class="smolBox" id="259"></div>
+    <div class="smolBox" id="290"></div>
+    <div class="smolBox" id="321"></div>
+    <div class="smolBox" id="352"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">12</div>
+    <div class="smolBox" id="12"></div>
+    <div class="smolBox" id="43"></div>
+    <div class="smolBox" id="74"></div>
+    <div class="smolBox" id="105"></div>
+    <div class="smolBox" id="136"></div>
+    <div class="smolBox" id="167"></div>
+    <div class="smolBox" id="198"></div>
+    <div class="smolBox" id="229"></div>
+    <div class="smolBox" id="260"></div>
+    <div class="smolBox" id="291"></div>
+    <div class="smolBox" id="322"></div>
+    <div class="smolBox" id="353"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">13</div>
+    <div class="smolBox" id="13"></div>
+    <div class="smolBox" id="44"></div>
+    <div class="smolBox" id="75"></div>
+    <div class="smolBox" id="106"></div>
+    <div class="smolBox" id="137"></div>
+    <div class="smolBox" id="168"></div>
+    <div class="smolBox" id="199"></div>
+    <div class="smolBox" id="230"></div>
+    <div class="smolBox" id="261"></div>
+    <div class="smolBox" id="292"></div>
+    <div class="smolBox" id="323"></div>
+    <div class="smolBox" id="354"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">14</div>
+    <div class="smolBox" id="14"></div>
+    <div class="smolBox" id="45"></div>
+    <div class="smolBox" id="76"></div>
+    <div class="smolBox" id="107"></div>
+    <div class="smolBox" id="138"></div>
+    <div class="smolBox" id="169"></div>
+    <div class="smolBox" id="200"></div>
+    <div class="smolBox" id="231"></div>
+    <div class="smolBox" id="262"></div>
+    <div class="smolBox" id="293"></div>
+    <div class="smolBox" id="324"></div>
+    <div class="smolBox" id="355"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">15</div>
+    <div class="smolBox" id="15"></div>
+    <div class="smolBox" id="46"></div>
+    <div class="smolBox" id="77"></div>
+    <div class="smolBox" id="108"></div>
+    <div class="smolBox" id="139"></div>
+    <div class="smolBox" id="170"></div>
+    <div class="smolBox" id="201"></div>
+    <div class="smolBox" id="232"></div>
+    <div class="smolBox" id="263"></div>
+    <div class="smolBox" id="294"></div>
+    <div class="smolBox" id="325"></div>
+    <div class="smolBox" id="356"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">16</div>
+    <div class="smolBox" id="16"></div>
+    <div class="smolBox" id="47"></div>
+    <div class="smolBox" id="78"></div>
+    <div class="smolBox" id="109"></div>
+    <div class="smolBox" id="140"></div>
+    <div class="smolBox" id="171"></div>
+    <div class="smolBox" id="202"></div>
+    <div class="smolBox" id="233"></div>
+    <div class="smolBox" id="264"></div>
+    <div class="smolBox" id="295"></div>
+    <div class="smolBox" id="326"></div>
+    <div class="smolBox" id="357"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">17</div>
+    <div class="smolBox" id="17"></div>
+    <div class="smolBox" id="48"></div>
+    <div class="smolBox" id="79"></div>
+    <div class="smolBox" id="110"></div>
+    <div class="smolBox" id="141"></div>
+    <div class="smolBox" id="172"></div>
+    <div class="smolBox" id="203"></div>
+    <div class="smolBox" id="234"></div>
+    <div class="smolBox" id="265"></div>
+    <div class="smolBox" id="296"></div>
+    <div class="smolBox" id="327"></div>
+    <div class="smolBox" id="358"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">18</div>
+    <div class="smolBox" id="18"></div>
+    <div class="smolBox" id="49"></div>
+    <div class="smolBox" id="80"></div>
+    <div class="smolBox" id="111"></div>
+    <div class="smolBox" id="142"></div>
+    <div class="smolBox" id="173"></div>
+    <div class="smolBox" id="204"></div>
+    <div class="smolBox" id="235"></div>
+    <div class="smolBox" id="266"></div>
+    <div class="smolBox" id="297"></div>
+    <div class="smolBox" id="328"></div>
+    <div class="smolBox" id="359"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">19</div>
+    <div class="smolBox" id="19"></div>
+    <div class="smolBox" id="50"></div>
+    <div class="smolBox" id="81"></div>
+    <div class="smolBox" id="112"></div>
+    <div class="smolBox" id="143"></div>
+    <div class="smolBox" id="174"></div>
+    <div class="smolBox" id="205"></div>
+    <div class="smolBox" id="236"></div>
+    <div class="smolBox" id="267"></div>
+    <div class="smolBox" id="298"></div>
+    <div class="smolBox" id="329"></div>
+    <div class="smolBox" id="360"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">20</div>
+    <div class="smolBox" id="20"></div>
+    <div class="smolBox" id="51"></div>
+    <div class="smolBox" id="82"></div>
+    <div class="smolBox" id="113"></div>
+    <div class="smolBox" id="144"></div>
+    <div class="smolBox" id="175"></div>
+    <div class="smolBox" id="206"></div>
+    <div class="smolBox" id="237"></div>
+    <div class="smolBox" id="268"></div>
+    <div class="smolBox" id="299"></div>
+    <div class="smolBox" id="330"></div>
+    <div class="smolBox" id="361"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">21</div>
+    <div class="smolBox" id="21"></div>
+    <div class="smolBox" id="52"></div>
+    <div class="smolBox" id="83"></div>
+    <div class="smolBox" id="114"></div>
+    <div class="smolBox" id="145"></div>
+    <div class="smolBox" id="176"></div>
+    <div class="smolBox" id="207"></div>
+    <div class="smolBox" id="238"></div>
+    <div class="smolBox" id="269"></div>
+    <div class="smolBox" id="300"></div>
+    <div class="smolBox" id="331"></div>
+    <div class="smolBox" id="362"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">22</div>
+    <div class="smolBox" id="22"></div>
+    <div class="smolBox" id="53"></div>
+    <div class="smolBox" id="84"></div>
+    <div class="smolBox" id="115"></div>
+    <div class="smolBox" id="146"></div>
+    <div class="smolBox" id="177"></div>
+    <div class="smolBox" id="208"></div>
+    <div class="smolBox" id="239"></div>
+    <div class="smolBox" id="270"></div>
+    <div class="smolBox" id="301"></div>
+    <div class="smolBox" id="332"></div>
+    <div class="smolBox" id="363"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">23</div>
+    <div class="smolBox" id="23"></div>
+    <div class="smolBox" id="54"></div>
+    <div class="smolBox" id="85"></div>
+    <div class="smolBox" id="116"></div>
+    <div class="smolBox" id="147"></div>
+    <div class="smolBox" id="178"></div>
+    <div class="smolBox" id="209"></div>
+    <div class="smolBox" id="240"></div>
+    <div class="smolBox" id="271"></div>
+    <div class="smolBox" id="302"></div>
+    <div class="smolBox" id="333"></div>
+    <div class="smolBox" id="364"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">24</div>
+    <div class="smolBox" id="24"></div>
+    <div class="smolBox" id="55"></div>
+    <div class="smolBox" id="86"></div>
+    <div class="smolBox" id="117"></div>
+    <div class="smolBox" id="148"></div>
+    <div class="smolBox" id="179"></div>
+    <div class="smolBox" id="210"></div>
+    <div class="smolBox" id="241"></div>
+    <div class="smolBox" id="272"></div>
+    <div class="smolBox" id="303"></div>
+    <div class="smolBox" id="334"></div>
+    <div class="smolBox" id="365"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">25</div>
+    <div class="smolBox" id="25"></div>
+    <div class="smolBox" id="56"></div>
+    <div class="smolBox" id="87"></div>
+    <div class="smolBox" id="118"></div>
+    <div class="smolBox" id="149"></div>
+    <div class="smolBox" id="180"></div>
+    <div class="smolBox" id="211"></div>
+    <div class="smolBox" id="242"></div>
+    <div class="smolBox" id="273"></div>
+    <div class="smolBox" id="304"></div>
+    <div class="smolBox" id="335"></div>
+    <div class="smolBox" id="366"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">26</div>
+    <div class="smolBox" id="26"></div>
+    <div class="smolBox" id="57"></div>
+    <div class="smolBox" id="88"></div>
+    <div class="smolBox" id="119"></div>
+    <div class="smolBox" id="150"></div>
+    <div class="smolBox" id="181"></div>
+    <div class="smolBox" id="212"></div>
+    <div class="smolBox" id="243"></div>
+    <div class="smolBox" id="274"></div>
+    <div class="smolBox" id="305"></div>
+    <div class="smolBox" id="336"></div>
+    <div class="smolBox" id="367"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">27</div>
+    <div class="smolBox" id="27"></div>
+    <div class="smolBox" id="58"></div>
+    <div class="smolBox" id="89"></div>
+    <div class="smolBox" id="120"></div>
+    <div class="smolBox" id="151"></div>
+    <div class="smolBox" id="182"></div>
+    <div class="smolBox" id="213"></div>
+    <div class="smolBox" id="244"></div>
+    <div class="smolBox" id="275"></div>
+    <div class="smolBox" id="306"></div>
+    <div class="smolBox" id="337"></div>
+    <div class="smolBox" id="368"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">28</div>
+    <div class="smolBox" id="28"></div>
+    <div class="smolBox" id="59"></div>
+    <div class="smolBox" id="90"></div>
+    <div class="smolBox" id="121"></div>
+    <div class="smolBox" id="152"></div>
+    <div class="smolBox" id="183"></div>
+    <div class="smolBox" id="214"></div>
+    <div class="smolBox" id="245"></div>
+    <div class="smolBox" id="276"></div>
+    <div class="smolBox" id="307"></div>
+    <div class="smolBox" id="338"></div>
+    <div class="smolBox" id="369"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">29</div>
+    <div class="smolBox" id="29"></div>
+    <div class="smolBox" id="60"></div>
+    <div class="smolBox" id="91"></div>
+    <div class="smolBox" id="122"></div>
+    <div class="smolBox" id="153"></div>
+    <div class="smolBox" id="184"></div>
+    <div class="smolBox" id="215"></div>
+    <div class="smolBox" id="246"></div>
+    <div class="smolBox" id="277"></div>
+    <div class="smolBox" id="308"></div>
+    <div class="smolBox" id="339"></div>
+    <div class="smolBox" id="370"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">30</div>
+    <div class="smolBox" id="30"></div>
+    <div class="smolBox" style="background-color: black" id="61"></div>
+    <div class="smolBox" id="92"></div>
+    <div class="smolBox" id="123"></div>
+    <div class="smolBox" id="154"></div>
+    <div class="smolBox" id="185"></div>
+    <div class="smolBox" id="216"></div>
+    <div class="smolBox" id="247"></div>
+    <div class="smolBox" id="278"></div>
+    <div class="smolBox" id="309"></div>
+    <div class="smolBox" id="340"></div>
+    <div class="smolBox" id="371"></div>
+</div>
+<br>
+<div class="blockC">
+    <div class="smolBox" style="border-color: white">31</div>
+    <div class="smolBox" id="31"></div>
+    <div class="smolBox" style="background-color: black" id="62"></div>
+    <div class="smolBox" id="93"></div>
+    <div class="smolBox" style="background-color: black" id="124"></div>
+    <div class="smolBox" id="155"></div>
+    <div class="smolBox" style="background-color: black"id="186"></div>
+    <div class="smolBox" id="217"></div>
+    <div class="smolBox" id="248"></div>
+    <div class="smolBox" style="background-color: black" id="279"></div>
+    <div class="smolBox" id="310"></div>
+    <div class="smolBox" style="background-color: black" id="341"></div>
+    <div class="smolBox" id="372"></div>
+</div>
+<br>
+<div>
+    <div class="smolBox" style="background-color: Yellow"></div><p>Amazing Day</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: Lime"></div><p>Good Day</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: Brown"></div><p>Meh Day</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: Red"></div><p>Frustrating/Angry Day</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: Tomato"></div><p>Stressed Out</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: OliveDrab"></div><p>Sick Day</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: RoyalBlue"></div><p>Sad Day</p>
+</div>
+<div>
+    <div class="smolBox" style="background-color: MidnightBlue"></div><p>Super Out of It</p>
+</div>
+    </center>
+<script defer>
+    var getPix = new XMLHttpRequest();
+    getPix.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            let colorList = JSON.parse(this.response);
+            for (i = 1; i <= colorList.length; i++) {
+                document.getElementById(i.toString()).style.backgroundColor = colorList[i-1];
+            }
+        }
+    };
+    getPix.open("GET", "https://pixels.domhupp.space/loadPixels", true);
+    getPix.send();
+</script>
+</body>
+</html>

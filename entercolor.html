@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Add Color for Today</title>
+</head>
+<body>
+<form id="login_form" action="addColor" method="post" class="centered_form">
+    <select id="dailyMood" name="dailyMood"
+            style="-webkit-appearance: none; border: 1px solid rgb(204, 204, 204);  margin-bottom: 5px;border-radius: 5px; background: white; width: 100%; margin-top: 10px; padding: 5px 10px; font-size: 14px; font-family: inherit; color: rgba(0, 0, 0, 0.6); height: 34px; cursor: pointer;">
+        <option value="Yellow">Amazing Day!</option>
+        <option value="Lime">Good Day</option>
+        <option value="Brown" selected="">Meh Day</option>
+        <option value="OliveDrab">Sick Day</option>
+        <option value="Red">Frustrating or Angering Day</option>
+        <option value="Tomato">Stressed Day</option>
+        <option value="RoyalBlue">Sad Day</option>
+        <option value="MidnightBlue">Super Out of It</option>
+    </select>
+    <br>
+    <input id="password" name="password" style="width: 100%; margin-bottom: 5px;">
+    <br>
+    <div>
+        <button style="width: 100%;" type="submit" class="btn btn-lg btn-primary">Submit Answer</button>
+    </div>
+</form>
+</body>
+</html>
